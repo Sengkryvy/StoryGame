@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:text="@string/genre"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/buttonDrama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonHorror"
+        android:layout_centerHorizontal="true"
+        android:text="@string/drama"
+        android:onClick="DramaGame"/>
+
+    <Button
+        android:id="@+id/buttonHorror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSciFi"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sci_fi"
+        android:onClick="HorrorGame"/>
+
+    <Button
+        android:id="@+id/buttonSciFi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/horror"
+        android:onClick="SciFiGame"/>
+</RelativeLayout>
